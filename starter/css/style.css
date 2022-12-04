@@ -2,12 +2,52 @@
   box-sizing: border-box;
 }
 
-body {
+  body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.5; 
+} 
+
+.page-wrapper {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 200px 200px 200px ;
 }
+
+header{ 
+display: grid;
+grid-template-columns:  55% 45%; }
+
+
+.grid-nav-container {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr ;
+grid-template-areas: 50px; 
+justify-items: end;
+}
+
+
+
+.contact-item {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+.page-section {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 50px 50px 50px;
+}
+
+
+li {
+list-style: none ;
+display: inline-block;
+}
+
+
+
 
 h1,
 h2,
